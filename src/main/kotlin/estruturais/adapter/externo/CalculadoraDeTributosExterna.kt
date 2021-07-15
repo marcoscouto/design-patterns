@@ -14,7 +14,9 @@ class CalculadoraDeTributosExterna {
     }
 
     fun getAliquota(salario: BigDecimal): BigDecimal {
-        assert(salario < 0.toBigDecimal())
+        if (salario <= 0.toBigDecimal()) {
+            throw IllegalArgumentException("Salário invalido")
+        }
 
         return when (salario) {
             in 0.toBigDecimal()..1100.00.toBigDecimal() -> .075.toBigDecimal()

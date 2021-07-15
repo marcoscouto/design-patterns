@@ -8,7 +8,7 @@ fun main() {
     val adapter = Adapter()
     val servicoInterno = ServicoInterno(adapter)
 
-    val salario = 5300.00
+    val salario = 2786.98
 
     val inssAnual = servicoInterno.calcularInssAnual(salario)
     val fgtsAnual = servicoInterno.calcularFgtsAnual(salario)
