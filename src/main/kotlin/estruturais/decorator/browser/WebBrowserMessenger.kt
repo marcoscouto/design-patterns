@@ -1,4 +1,6 @@
-package estruturais.decorator
+package estruturais.decorator.browser
+
+import estruturais.decorator.Messenger
 
 class WebBrowserMessenger : Messenger {
 

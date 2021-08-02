@@ -1,4 +1,4 @@
-package estruturais.decorator
+package estruturais.decorator.app
 
 class AndroidMessenger : AppMessenger() {
 

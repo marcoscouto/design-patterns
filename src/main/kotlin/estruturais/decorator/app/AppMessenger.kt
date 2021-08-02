@@ -1,4 +1,6 @@
-package estruturais.decorator
+package estruturais.decorator.app
+
+import estruturais.decorator.Messenger
 
 open class AppMessenger : Messenger {
 
