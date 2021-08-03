@@ -9,16 +9,9 @@ fun main() {
     val message = "Hello!!"
 
     var messenger: Messenger = WebBrowserMessenger()
+    messenger = AndroidMessenger(messenger)
+    messenger = IphoneMessenger(messenger)
 
     messenger.sendMessage(message)
-
-    messenger = AndroidMessenger()
-
-    messenger.sendMessage(message)
-
-    messenger = IphoneMessenger()
-
-    messenger.sendMessage(message)
-
 
 }

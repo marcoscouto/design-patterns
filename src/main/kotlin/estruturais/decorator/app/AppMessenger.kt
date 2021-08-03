@@ -2,10 +2,10 @@ package estruturais.decorator.app
 
 import estruturais.decorator.Messenger
 
-open class AppMessenger : Messenger {
+abstract class AppMessenger(private val messenger: Messenger?) : Messenger {
 
     override fun sendMessage(message: String) {
-        println("Sending message from a mobile device")
+        messenger?.sendMessage(message)
     }
 
 }

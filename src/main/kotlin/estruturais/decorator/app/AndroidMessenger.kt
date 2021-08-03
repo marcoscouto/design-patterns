@@ -1,6 +1,8 @@
 package estruturais.decorator.app
 
-class AndroidMessenger : AppMessenger() {
+import estruturais.decorator.Messenger
+
+class AndroidMessenger(messenger: Messenger?) : AppMessenger(messenger) {
 
     override fun sendMessage(message: String) {
         super.sendMessage(message)
