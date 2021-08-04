@@ -2,15 +2,14 @@ package estruturais.facade
 
 class Store {
 
-    companion object {
+    private val financingDepartment = FinancingDepartment()
+    private val logisticsDepartment = LogisticsDepartment()
 
-        fun processBuy(product: Product) {
-            println("Initializing ${product.name} order")
-            FinancingDepartment.processPayment()
-            FinancingDepartment.createInvoice(product)
-            LogisticsDepartment.sendProduct(product)
-        }
-
+    fun processBuy(product: Product) {
+        println("Initializing ${product.name} order")
+        financingDepartment.processPayment()
+        financingDepartment.createInvoice(product)
+        logisticsDepartment.sendProduct(product)
     }
 
 }

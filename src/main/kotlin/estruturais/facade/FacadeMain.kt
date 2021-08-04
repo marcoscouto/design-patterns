@@ -4,6 +4,8 @@ fun main() {
 
     val product = Product("tv", 2000.00)
 
-    Store.processBuy(product)
+    val store = Store()
+
+    store.processBuy(product)
 
 }
