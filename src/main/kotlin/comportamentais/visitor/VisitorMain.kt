@@ -2,6 +2,7 @@ package comportamentais.visitor
 
 import comportamentais.visitor.shapes.Circle
 import comportamentais.visitor.shapes.Square
+import comportamentais.visitor.visitors.ReportVisitor
 
 fun main(){
 

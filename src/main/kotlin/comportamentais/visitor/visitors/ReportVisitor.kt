@@ -1,4 +1,4 @@
-package comportamentais.visitor
+package comportamentais.visitor.visitors
 
 import comportamentais.visitor.shapes.Circle
 import comportamentais.visitor.shapes.Square

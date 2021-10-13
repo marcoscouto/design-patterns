@@ -1,7 +1,6 @@
 package comportamentais.visitor.shapes
 
-import comportamentais.visitor.Shape
-import comportamentais.visitor.Visitor
+import comportamentais.visitor.visitors.Visitor
 
 class Circle : Shape {
 
