@@ -2,9 +2,9 @@ package comportamentais.iterator
 
 fun main() {
 
-    val numbers = (1..20).toList()
+    val numbers = Numbers((1..20).toList())
 
-    val iterator = PairIterator(numbers)
+    val iterator = numbers.iterator()
 
     while (iterator.hasNext()){
         println(iterator.next())
